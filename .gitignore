@@ -1,0 +1,29 @@
+# Python virtual environment & interpreter
+.venv/
+env/
+venv/
+
+# Python bytecode & cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# Datasets (AI4I 2020 raw & processed intermediate artifacts)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Machine Learning Model Artifacts (Joblib serialized pipelines)
+models/*
+!models/.gitkeep
+
+# Operating system artifacts
+.DS_Store
+Thumbs.db

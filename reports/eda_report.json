@@ -1,0 +1,167 @@
+{
+  "overview": {
+    "shape": {
+      "rows": 10000,
+      "columns": 14
+    },
+    "data_types": {
+      "UDI": "int64",
+      "Product ID": "str",
+      "Type": "str",
+      "Air temperature [K]": "float64",
+      "Process temperature [K]": "float64",
+      "Rotational speed [rpm]": "int64",
+      "Torque [Nm]": "float64",
+      "Tool wear [min]": "int64",
+      "Machine failure": "int64",
+      "TWF": "int64",
+      "HDF": "int64",
+      "PWF": "int64",
+      "OSF": "int64",
+      "RNF": "int64"
+    },
+    "missing_values": {
+      "total": 0,
+      "by_column": {
+        "UDI": 0,
+        "Product ID": 0,
+        "Type": 0,
+        "Air temperature [K]": 0,
+        "Process temperature [K]": 0,
+        "Rotational speed [rpm]": 0,
+        "Torque [Nm]": 0,
+        "Tool wear [min]": 0,
+        "Machine failure": 0,
+        "TWF": 0,
+        "HDF": 0,
+        "PWF": 0,
+        "OSF": 0,
+        "RNF": 0
+      }
+    },
+    "duplicate_rows": 0
+  },
+  "target_distribution": {
+    "counts": {
+      "normal_0": 9661,
+      "failed_1": 339
+    },
+    "percentages": {
+      "normal_0": 96.61,
+      "failed_1": 3.39
+    },
+    "total_samples": 10000,
+    "imbalance_ratio": "28.5:1"
+  },
+  "numerical_distributions": {
+    "Air temperature [K]": {
+      "mean": 300.00493,
+      "std": 2.0002586829157516,
+      "min": 295.3,
+      "25%": 298.3,
+      "50%_median": 300.1,
+      "75%": 301.5,
+      "max": 304.5,
+      "skewness": 0.1142739205215533
+    },
+    "Process temperature [K]": {
+      "mean": 310.00555999999995,
+      "std": 1.4837342191657208,
+      "min": 305.7,
+      "25%": 308.8,
+      "50%_median": 310.1,
+      "75%": 311.1,
+      "max": 313.8,
+      "skewness": 0.015027267769234081
+    },
+    "Rotational speed [rpm]": {
+      "mean": 1538.7761,
+      "std": 179.2840959134266,
+      "min": 1168.0,
+      "25%": 1423.0,
+      "50%_median": 1503.0,
+      "75%": 1612.0,
+      "max": 2886.0,
+      "skewness": 1.993171004713753
+    },
+    "Torque [Nm]": {
+      "mean": 39.986909999999995,
+      "std": 9.968933725121337,
+      "min": 3.8,
+      "25%": 33.2,
+      "50%_median": 40.1,
+      "75%": 46.8,
+      "max": 76.6,
+      "skewness": -0.009516595840060154
+    },
+    "Tool wear [min]": {
+      "mean": 107.951,
+      "std": 63.65414663663636,
+      "min": 0.0,
+      "25%": 53.0,
+      "50%_median": 108.0,
+      "75%": 162.0,
+      "max": 253.0,
+      "skewness": 0.027292239050452968
+    }
+  },
+  "target_correlations": {
+    "Torque [Nm]": 0.1913207750594941,
+    "Tool wear [min]": 0.1054482189195948,
+    "Air temperature [K]": 0.08255568978322685,
+    "Process temperature [K]": 0.03594597332975212,
+    "Rotational speed [rpm]": -0.044187559734375326
+  },
+  "failed_vs_normal_comparison": {
+    "Air temperature [K]": {
+      "normal_mean": 299.9739985508746,
+      "normal_median": 300.0,
+      "normal_std": 1.9907479694438195,
+      "failed_mean": 300.88643067846607,
+      "failed_median": 301.6,
+      "failed_std": 2.071472606797602,
+      "mean_difference": 0.912432127591444,
+      "percentage_change": 0.30417040543488916
+    },
+    "Process temperature [K]": {
+      "normal_mean": 309.99556981678916,
+      "normal_median": 310.0,
+      "normal_std": 1.4868460647646986,
+      "failed_mean": 310.2902654867257,
+      "failed_median": 310.4,
+      "failed_std": 1.3636856993841047,
+      "mean_difference": 0.29469566993651597,
+      "percentage_change": 0.09506447789259839
+    },
+    "Rotational speed [rpm]": {
+      "normal_mean": 1540.2600144912535,
+      "normal_median": 1507.0,
+      "normal_std": 167.39473403228348,
+      "failed_mean": 1496.486725663717,
+      "failed_median": 1365.0,
+      "failed_std": 384.94354727230365,
+      "mean_difference": -43.77328882753659,
+      "percentage_change": -2.8419415173869114
+    },
+    "Torque [Nm]": {
+      "normal_mean": 39.62965531518476,
+      "normal_median": 39.9,
+      "normal_std": 9.472080111077105,
+      "failed_mean": 50.16814159292036,
+      "failed_median": 53.7,
+      "failed_std": 16.374498133978197,
+      "mean_difference": 10.538486277735593,
+      "percentage_change": 26.592424773620465
+    },
+    "Tool wear [min]": {
+      "normal_mean": 106.69371700652107,
+      "normal_median": 107.0,
+      "normal_std": 62.94579046389409,
+      "failed_mean": 143.78171091445427,
+      "failed_median": 165.0,
+      "failed_std": 72.75987593568681,
+      "mean_difference": 37.087993907933196,
+      "percentage_change": 34.76117896020662
+    }
+  }
+}
