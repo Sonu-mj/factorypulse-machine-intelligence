@@ -138,3 +138,23 @@ tests/test_training.py ..........                                        [100%]
 
 - Diagnostic failure modes (`TWF`, `HDF`, `PWF`, `OSF`, `RNF`) and hardware identifiers (`UDI`, `Product ID`) are strictly excluded from predictive features.
 - Model decisions use an optimized threshold of **0.45** (tuned via 5-fold cross-validation on the training set) rather than the arbitrary 0.50 cutoff, prioritizing failure recall while balancing precision.
+
+---
+
+## 📸 Screenshots
+
+### FastAPI — Interactive API Documentation (Swagger UI)
+
+![FastAPI Swagger UI](docs/screenshots/api-swagger-docs.png)
+
+### Streamlit Dashboard — Machine Overview
+
+![Machine Overview](docs/screenshots/dashboard-overview.png)
+
+### Streamlit Dashboard — Machine Monitoring (Sensor Telemetry)
+
+![Machine Monitoring](docs/screenshots/dashboard-monitoring.png)
+
+### Streamlit Dashboard — Failure Prediction & Risk Assessment
+
+![Failure Prediction](docs/screenshots/dashboard-failure-prediction.png)
